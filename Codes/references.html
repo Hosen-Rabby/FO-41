@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Antonio | References</title>
+
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <!-- <link href="../Assets/img/favicon.png" rel="icon"> -->
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="../Assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../Assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../Assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../Assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="../Assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="../Assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="../Assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="preloader"></div>
+
+    <div class="naav">
+      <div class="container">
+        <div class="header">
+          <h1><a href="../index.html">Antonio Goldson</a></h1>
+          <ul class="nav_menu">
+            <li class="nav_link">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="nav_link">
+              <a href="./professional.html">Professional</a>
+            </li>
+            <li class="nav_link">
+              <a href="./personality.html">Personality</a>
+            </li>
+            <li class="nav_link">
+              <a href="./development.html">Development</a>
+            </li>
+            <li class="nav_link">
+              <a href="./storyboard.html">Story board</a>
+            </li>
+            <li class="nav_link">
+              <a href="./references.html" class="active">References</a>
+            </li>
+          </ul>
+
+          <div class="hamburg">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- references starts -->
+    <section id="services references" class="services resume dev">
+      <div class="container">
+        <div class="section-title">
+          <h2>Reference</h2>
+          <p>My References</p>
+        </div>
+        <h3 class="resume-title">Professional Experience(Future)</h3>
+        <div class="resume-item">
+          <h4>
+            Keirsey Temperament Assessment(n.d) Keirsey Temperament Assessment
+          </h4>
+          <h5>http://www.keirsey.com/</h5>
+        </div>
+        <div class="resume-item">
+          <h4>
+            Rohn, J & Widener, C. (2015). Twelve Pillars: a novel Chapters 4-7
+          </h4>
+          <h5>Retrieved: September 17, 2022</h5>
+        </div>
+        <div class="resume-item">
+          <h4>
+            W3Schools Free Online Web Tutorials, (n.d). W3Schools Online Web
+            Tutorials
+          </h4>
+          <h5>Retrieved: September 14, 2022 from https://www.w3schools.com/</h5>
+        </div>
+      </div>
+    </section>
+
+    <!-- references ends -->
+
+
+    <script>
+      const hamburg = document.querySelector(".hamburg");
+      const headerUl = document.querySelector(".nav_menu");
+
+      hamburg.addEventListener("click", () => {
+        hamburg.classList.toggle("active");
+        headerUl.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav_link").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburg.classList.remove("active");
+          headerUl.classList.remove("active");
+        })
+      );
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

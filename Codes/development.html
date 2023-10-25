@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Antonio | Development</title>
+
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <!-- <link href="../Assets/img/favicon.png" rel="icon"> -->
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="../Assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../Assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../Assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../Assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="../Assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="../Assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="../Assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="preloader"></div>
+
+    <div class="naav">
+      <div class="container">
+        <div class="header">
+          <h1><a href="../index.html">Antonio Goldson</a></h1>
+          <ul class="nav_menu">
+            <li class="nav_link">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="nav_link">
+              <a href="./professional.html">Professional</a>
+            </li>
+            <li class="nav_link">
+              <a href="./personality.html">Personality</a>
+            </li>
+            <li class="nav_link">
+              <a href="./development.html" class="active">Development</a>
+            </li>
+            <li class="nav_link">
+              <a href="./storyboard.html">Story board</a>
+            </li>
+            <li class="nav_link"><a href="./references.html">References</a></li>
+          </ul>
+
+          <div class="hamburg">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ======= development Section ======= -->
+    <section id="services development" class="services resume dev">
+      <div class="container">
+        <div class="section-title">
+          <h2>Development</h2>
+          <p>Personal Development</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Twelve Pillars</h4>
+              <p>
+                <em
+                  >"Twelve Pillars" is a motivational and self-help book that
+                  offers twelve core principles for achieving success and
+                  personal development. It tells the story of a young man,
+                  Michael, who meets a successful entrepreneur named Charlie and
+                  learns valuable life lessons through their conversations. The
+                  book emphasizes various principles, including taking
+                  responsibility for one's life, setting goals, taking
+                  initiative, and building strong relationships.</em
+                >
+              </p>
+            </div>
+
+            <p>
+              Incorporating the principles from "Twelve Pillars" into my life as
+              I pursue my Computer Science degree can help me develop a
+              proactive and goal-oriented mindset. It encourages me to take
+              ownership of my education and build meaningful connections with
+              others in the field. These qualities can lead to personal growth,
+              academic success, and a strong foundation for my future career.
+            </p>
+          
+            <div class="resume-item pb-0">
+              <h4>Top Two Skills Acquired So Far</h4>
+              <ol>
+                <li>
+                  Programming Proficiency: I have developed strong programming
+                  skills in languages like Python, C, and C enabling me to
+                  tackle simple coding challenges and understand programs
+                </li>
+                <li>
+                  Problem-Solving: I have gained problem-solving skills through
+                  various programming and algorithmic tasks, helping me approach
+                  complex issues methodically and find effective solutions.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Application to My Life:</h3>
+
+            <div class="resume-">
+              <ul>
+                <li>
+                  Taking Responsibility: In the context of pursuing my Computer
+                  Science degree, taking responsibility for my education is
+                  essential. I have control over my learning and academic
+                  performance. This means actively engaging in coursework,
+                  seeking help when needed, and taking the initiative to excel
+                  in my studies.
+                </li>
+                <li>
+                  Setting Goals: The concept of setting clear, achievable goals
+                  is crucial. I can apply this to my academic journey by setting
+                  specific goals for my degree, such as achieving a certain GPA,
+                  completing challenging projects, or securing internships in my
+                  field of interest. Setting these goals will provide me with
+                  motivation and a sense of purpose in my studies.
+                </li>
+                <li>
+                  Building Relationships: Building strong relationships is
+                  valuable not only in my personal life but also in my academic
+                  and professional life. Networking with professors, peers, and
+                  industry professionals can open doors to opportunities and
+                  provide support in my academic and career endeavors.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <script>
+      const hamburg = document.querySelector(".hamburg");
+      const headerUl = document.querySelector(".nav_menu");
+
+      hamburg.addEventListener("click", () => {
+        hamburg.classList.toggle("active");
+        headerUl.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav_link").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburg.classList.remove("active");
+          headerUl.classList.remove("active");
+        })
+      );
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
